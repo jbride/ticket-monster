@@ -5,7 +5,7 @@
 #####################################
 
 # Stateless Session Beans Max Pool Size
-$slsb_max_pool_size = 40
+$slsb_max_pool_size = 30
 
 exec {'stateless session beans pool size':
   command =>  "/bin/sed -i \"s/name=\\\"slsb-strict-max-pool\\\" max-pool-size=\\\"20\\\"/name=\\\"slsb-strict-max-pool\\\" max-pool-size=\\\"$slsb_max_pool_size\\\"/g\" /home/jbosseap/eap/jboss-eap-6.3/standalone/configuration/standalone.xml"
