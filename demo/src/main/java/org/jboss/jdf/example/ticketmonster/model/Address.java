@@ -71,7 +71,7 @@ public class Address implements Serializable {
         }
         if (street != null ? !street.equals(address.street) : address.street != null) {
             return false;
-        //}
+        }
         
         return true;
     }
