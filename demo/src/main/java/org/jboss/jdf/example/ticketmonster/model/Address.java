@@ -63,13 +63,16 @@ public class Address implements Serializable {
 
         Address address = (Address) o;
 
-        if (city != null ? !city.equals(address.city) : address.city != null)
+        if (city != null ? !city.equals(address.city) : address.city != null) {
             return false;
-        if (country != null ? !country.equals(address.country) : address.country != null)
+        }
+        if (country != null ? !country.equals(address.country) : address.country != null) {
             return false;
-        if (street != null ? !street.equals(address.street) : address.street != null)
+        }
+        if (street != null ? !street.equals(address.street) : address.street != null) {
             return false;
-
+        //}
+        
         return true;
     }
 
